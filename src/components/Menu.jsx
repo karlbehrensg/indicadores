@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 // eslint-disable-next-line import/no-extraneous-dependencies
 import clsx from 'clsx';
 import { makeStyles, useTheme } from '@material-ui/core/styles';
@@ -143,18 +144,24 @@ const Menu = () => {
         </div>
         <Divider />
         <List>
-          <ListItem button>
-            <ListItemIcon><TimelineIcon /></ListItemIcon>
-            <ListItemText>Detalle Operativo</ListItemText>
-          </ListItem>
-          <ListItem button>
-            <ListItemIcon><GridOnIcon /></ListItemIcon>
-            <ListItemText>Tablero</ListItemText>
-          </ListItem>
-          <ListItem button>
-            <ListItemIcon><ScheduleIcon /></ListItemIcon>
-            <ListItemText>Cierre de Procesos</ListItemText>
-          </ListItem>
+          <Link to='/'>
+            <ListItem button>
+              <ListItemIcon><TimelineIcon /></ListItemIcon>
+              <ListItemText>Detalle Operativo</ListItemText>
+            </ListItem>
+          </Link>
+          <Link to='/tablero'>
+            <ListItem button>
+              <ListItemIcon><GridOnIcon /></ListItemIcon>
+              <ListItemText>Tablero</ListItemText>
+            </ListItem>
+          </Link>
+          <Link to='/cierre-procesos'>
+            <ListItem button>
+              <ListItemIcon><ScheduleIcon /></ListItemIcon>
+              <ListItemText>Cierre de Procesos</ListItemText>
+            </ListItem>
+          </Link>
         </List>
       </Drawer>
     </div>
