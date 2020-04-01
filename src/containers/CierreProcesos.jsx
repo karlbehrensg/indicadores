@@ -1,10 +1,10 @@
 import React from 'react';
 import Cuerpo from '../components/Cuerpo';
 
-const Home = () => (
-  <div className='Home'>
+const CierreProcesos = () => (
+  <div className='CierreProcesos'>
     <Cuerpo />
   </div>
 );
 
-export default Home;
+export default CierreProcesos;
